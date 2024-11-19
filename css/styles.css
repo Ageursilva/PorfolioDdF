@@ -1,0 +1,149 @@
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    display: flex; /* Define um layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura como 100% da altura da janela de visualização */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Adiciona uma transição suave para mudanças de cor */
+}
+
+/* Estilo da caixa de cartão do currículo */
+.resume-card {
+    background-color: #fff; /* Define o fundo como branco */
+    padding: 90px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Arredonda os cantos */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    max-width: 600px; /* Define a largura máxima */
+    width: 50%; /* Define a largura como 50% do contêiner pai */
+    text-align: center; /* Centraliza o texto */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Adiciona uma transição suave para mudanças de cor */
+}
+
+/* Estilo da imagem de perfil */
+.profile-picture {
+    width: 120px; /* Define a largura da imagem */
+    height: 120px; /* Define a altura da imagem */
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Corta a imagem para preencher o contêiner */
+    margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+}
+
+/* Efeito de zoom ao passar o mouse sobre a imagem de perfil */
+.profile-picture:hover {
+    transform: scale(1.6); /* Aumenta o tamanho da imagem */
+}
+
+/* Estilo para o título principal */
+h1 {
+    margin-top: 10px; /* Adiciona espaço acima do título */
+    font-size: 24px; /* Define o tamanho da fonte */
+    margin-bottom: 15px; /* Adiciona espaço abaixo do título */
+}
+
+/* Estilo para o parágrafo */
+p {
+    color: #00ADB5; /* Define a cor do texto */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do parágrafo */
+    font-size: 16px; /* Define o tamanho da fonte */
+    line-height: 1.5; /* Define o espaçamento entre linhas */
+}
+
+/* Estilo dos ícones das tecnologias */
+.tech-icons {
+    display: flex; /* Define um layout flexível */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    gap: 25px; /* Adiciona espaço entre os ícones */
+    margin-top: 20px; /* Adiciona espaço acima dos ícones */
+    font-size: 35px; /* Define o tamanho dos ícones */
+}
+
+/* Estilo para a seção de ícones das redes sociais */
+.social-icons {
+    font-size: 35px; /* Define o tamanho dos ícones */
+}
+
+/* Estilo dos links de ícones de redes sociais no modo claro */
+.social-icons a {
+    color: #000; /* Define a cor preta para os ícones */
+    transition: color 0.3s ease-in-out; /* Adiciona uma transição suave para mudanças de cor */
+}
+
+/* Estilo para os botões */
+button {
+    background-color: #00ADB5; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    border-radius: 4px; /* Arredonda os cantos */
+    cursor: pointer; /* Altera o cursor para um ponteiro */
+}
+
+/* Estilo para a seção de informações de contato */
+#contact-info {
+    text-align: center; /* Alinhamento central */
+    padding: 5px; /* Espaçamento interno */
+    background-color: rgba(0, 173, 181, 0.1); /* Fundo com leve transparência */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-top: 20px; /* Espaçamento acima */
+    transition: opacity 0.3s ease-in-out; /* Transição suave */
+    max-width: 300px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo dos links de email */
+#contact-info a {
+    color: #00ADB5; /* Cor do link */
+    text-decoration: none; /* Remove a decoração do link */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s ease-in-out; /* Transição suave para mudanças de cor */
+}
+
+#contact-info a:hover {
+    color: #007f87; /* Cor ao passar o mouse */
+}
+
+#contact-info p {
+    color: #333; /* Cor do texto */
+    margin: 10px 0; /* Espaçamento entre as linhas */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo para o tema escuro */
+.dark-theme {
+    background-color: #222; /* Fundo do corpo no tema escuro */
+    color: #bab6b6; /* Cor do texto no tema escuro */
+}
+
+/* Estilo da caixa de cartão no tema escuro */
+.dark-theme .resume-card {
+    background-color: #333; /* Fundo do cartão no tema escuro */
+}
+
+/* Estilo dos links de ícones de redes sociais no modo escuro */
+.dark-theme .social-icons a {
+    color: #bab6b6; /* Cor dos ícones no tema escuro */
+}
+
+/* Estilo do formulário de contato no tema escuro */
+.dark-theme #contact-info {
+    background-color: rgba(255, 255, 255, 0.05); /* Fundo translúcido no tema escuro */
+    color: #bab6b6; /* Cor do texto no tema escuro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada */
+}
+
+/* Estilo para o link de email no tema escuro */
+.dark-theme #contact-info a {
+    color: #80d8d9; /* Cor do link no tema escuro */
+}
+
+.dark-theme #contact-info a:hover {
+    color: #a4ebeb; /* Cor ao passar o mouse no tema escuro */
+}
+
+.dark-theme #contact-info p {
+    color: #bab6b6; /* Cor do texto no tema escuro */
+}

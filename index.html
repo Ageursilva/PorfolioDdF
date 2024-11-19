@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização responsiva -->
+    <title>Portfólio  - Devs do Futuro</title> <!-- Título da página -->
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Link para o arquivo de estilo CSS -->
+    <script src="/js/script.js"></script> <!-- Link para o arquivo JavaScript -->
+    <!-- Link para a biblioteca de ícones do Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!-- Cartão principal do currículo -->
+    <div class="resume-card">
+        <!-- Imagem de perfil -->
+        <img src="/images/profile.webp" class="profile-picture">
+        
+        <!-- Nome da pessoa -->
+        <h2>Quark</h2>
+        
+        <!-- Ícones das redes sociais -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/Quark" target="_blank"><i class="fab fa-linkedin"></i></a> <!-- Link para o LinkedIn -->
+            <a href="https://github.com/quark" target="_blank"><i class="fab fa-github"></i></a> <!-- Link para o GitHub -->
+        </div>
+        
+        <!-- Título profissional -->
+        <h1>Desenvolvedor de sistemas</h1>
+        
+        <!-- Descrição da pessoa -->
+        <p>Sou uma pessoa apaixonada por tecnologia e desenvolvimento, sempre em busca de novas ideias e desafios. Gosto de criar projetos inovadores, seja desenvolvendo jogos, sites, ou explorando novas linguagens de programação. No meu tempo livre, curto aprender coisas novas e compartilhar conhecimento!</p>
+        <!-- Seção de tecnologias -->
+        <div class="technologies">
+            <h2>Tecnologias</h2>
+            
+            <!-- Ícones das tecnologias usadas -->
+            <div class="tech-icons">
+                <i class="fab fa-python" title="Python"></i> <!-- Ícone de Python -->
+                <i class="fab fa-html5" title="HTML5"></i> <!-- Ícone de HTML5 -->
+                <i class="fab fa-css3" title="CSS3"></i> <!-- Ícone de CSS3 -->
+                <i class="fab fa-js" title="JavaScript"></i> <!-- Ícone de JavaScript -->
+                <i class="fab fa-linux" title="Linux"></i> <!-- Ícone de Linux -->
+                <i class="fab fa-windows" title="Windows"></i> <!-- Ícone de Windows -->
+                <i class="fas fa-file-code" title="XML"></i> <!-- Ícone de XML -->
+                <i class="fas fa-network-wired" title="ERP"></i> <!-- Ícone de ERP -->
+                <i class="fas fa-shield-alt" title="Cybersecurity"></i> <!-- Ícone de Cibersegurança -->
+            </div>
+            <br>
+            
+            <!-- Botão para alternar o tema (claro/escuro) -->
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </button>
+            
+            <!-- Botão para mostrar informações de contato -->
+            <button onclick="showContactInfo()">
+                <i class="fa-solid fa-address-card"></i>
+            </button>
+            
+            <!-- Informações de contato, inicialmente ocultas -->
+            <div id="contact-info" style="display: none; margin-top: 20px;">
+                <p>Email: <a href="mailto:caramelo@caramelo.com">caramelo@caramelo.com</a></p> <!-- Endereço de email -->
+                <p>Telefone: (11) 4002-8922</p> <!-- Telefone de contato -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
